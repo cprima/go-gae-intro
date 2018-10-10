@@ -1,0 +1,45 @@
+title: go-gae-intro
+email: cprior@gmail.com
+description: >- 
+  Hello World on Google Apps Engine with Go
+description_de: >- 
+  Hallo Welt mit Google Apps Engine in Go
+baseurl: "/go-gae-intro"
+url: ""
+
+# Build settings
+markdown: kramdown
+
+source:        .
+layouts_dir:  ./business/marketing/web/_layouts
+includes_dir: ./business/marketing/web/_includes
+destination:  ./business/marketing/web/_site
+data_dir:     ./dat
+sass:
+    sass_dir: ./business/marketing/web/assets/_sass
+
+exclude:
+  - application/physical/mob
+  - application/physical/be/README.md
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: "application/logical/building-blocks"
+      type: "posts"
+    values:
+      permalink: /application/logical/building-blocks/:title.html
+      #categories: application-logical_building-blocks
+  -
+    scope:
+      path: "technology/physical/building-blocks"
+      type: "posts"
+    values:
+      permalink: /technology/physical/building-blocks/:title.html
+      #categories: application-logical_building-blocks

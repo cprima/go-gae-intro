@@ -1,0 +1,7 @@
+cron:
+
+- description: "hello"
+  url: /hello/cron
+  schedule: every 5 minutes
+  target: hello
+  timezone: America/New_York
