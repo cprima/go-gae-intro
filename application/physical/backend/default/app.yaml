@@ -1,5 +1,5 @@
-runtime: go
-api_version: go1
+runtime: go112
+#api_version: go1
 service: default
 
 handlers:
@@ -7,4 +7,4 @@ handlers:
   static_files: static/images/favicon.ico
   upload: static/images/favicon.ico
 - url: /.*
-  script: _go_app
+  script: auto
